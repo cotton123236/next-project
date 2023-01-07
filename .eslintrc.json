@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "prettier"
+  ],
+  "plugins": ["custom"],
+  "rules": {
+    "semi": [2, "always"],
+		"indent": [2, "tab"],
+		"no-tabs": 0,
+		"no-console": "off"
+    // 因為不能使用 next/image ，避免一直提醒
+    // "@next/next/no-img-element": "off",
+    // "custom/no-use-next-image": 2,
+    // "custom/no-use-next-link": 1
+  },
+  "env": {
+   "browser": true,
+   "es6": true,
+   "node": true
+  }
+}
